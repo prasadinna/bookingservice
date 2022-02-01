@@ -1,0 +1,21 @@
+{
+  "title": "Currency resource",
+  "description": "Currency resource object",
+  "type": "object",
+  "properties": {
+
+    "amount": {
+      "type":"number", "default":"0.0"
+    },
+    "currency": {
+      "description": "Currency",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 25
+    }
+  },
+  "required": [
+    "amount",
+    "currency"
+  ]
+}

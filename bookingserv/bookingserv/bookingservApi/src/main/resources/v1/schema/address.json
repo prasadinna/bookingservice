@@ -1,0 +1,43 @@
+{
+  "title": "Address resource",
+  "description": "Address resource object",
+  "type": "object",
+  "properties": {
+
+    "line1": {
+      "description": "Line 1 in address",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "line2": {
+      "description": "Line 2 in address",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "city": {
+      "description": "City",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "state": {
+      "description": "State",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "zipCode": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    }
+  },
+  "required": [
+    "line",
+    "city",
+    "state",
+    "zipCode"
+  ]
+}
